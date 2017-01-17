@@ -18,8 +18,8 @@ $RECYCLE.BIN/
 *.lnk
 
 #dir
-images\
-node_modules\
+images
+node_modules
 
 # =========================
 # Operating System Files

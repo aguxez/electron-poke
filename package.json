@@ -1,0 +1,33 @@
+{
+  "name": "pokesearch",
+  "version": "1.0.0",
+  "description": "Simple Pokedex",
+  "main": "main.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "electron .",
+    "exe32": "electron-packager . pokesearch --platform win32 --arch ia32 --out dist/ --ignore \"(dist|node_modules/electron.*)\"",
+    "exe64": "electron-packager . pokesearch --platform win32 --arch x64 --out dist/ --ignore \"(dist|node_modules/electron.*)\"",
+    "set32": "electron-installer-windows --src dist/pokesearch-win32-ia32/ --dest dist/installers/ia32/",
+    "set64": "electron-installer-windows --src dist/pokesearch-win32-x64/ --dest dist/installers/x64/",
+    "build": "npm run clean && npm run exe32 && npm run set32 && npm run exe64 && npm run set64"
+  },
+  "author": {
+    "name": "Miguel Diaz",
+    "email": "diazmiiguel@gmail.com",
+    "url": "http://example.org"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "electron-installer-windows": "*",
+    "electron-packager": "*",
+    "electron-prebuilt": "*",
+    "fs-plus": "*",
+    "rimraf": "*"
+  },
+  "dependencies": {
+    "open": "0.0.5",
+    "shell": "^0.3.2"
+  }
+}

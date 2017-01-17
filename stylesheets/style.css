@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body {
+    margin: 0;
+}
+
+a:link,
+a {
+    text-decoration: none!important;
+    color: inherit!important;
+}
+
+#backgroundPokemon {
+    background-color: #64d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 60%;
+    /* REMOVE THIS AFTER AJAX / SET PADDING TO 5 OR 6% */
+    padding-top: 12%;
+    padding-bottom: 25%;
+    /* */
+    height: 50%;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h1, h3 {
+	font-family: Raleway;
+    font-weight:900;
+    text-shadow: 0px 0px 3px #000;
+}
+
+#pageTitleHeader {
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+}
+
+.loading-modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../images/loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .loading-modal {
+    display: block;
+}
+
+#page {
+    text-decoration: none;
+}
+
+#sprite img {
+    width: 9%;
+}
+
+#typeAndName h3 {
+    display: inline;
+    margin-left: 80%;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+}
