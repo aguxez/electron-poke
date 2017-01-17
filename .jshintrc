@@ -1,0 +1,11 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "globals": {
+    "$": true,
+    "$body": true,
+    "document": true
+  },
+  "esversion": 6
+}
